@@ -1,0 +1,42 @@
+@font-face {
+  font-family: "YsabeauOffice";
+  src: url("../../fonts/YsabeauOffice-Italic-VariableFont_wght.ttf")
+    format("truetype");
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 10vh;
+  background-image: url("../../img/navbarbackground.jpg");
+  background-size: cover;
+  opacity: 0.8;
+  transition: opacity 0.5s ease;
+}
+
+.container.transparent {
+  opacity: 0.5;
+}
+
+.link {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0 10px;
+  text-align: center;
+  font-family: "YsabeauOffice", sans-serif;
+  transition: font-size 0.8s ease, color 3.0s  ease; /* Agrega una transición suave */
+}
+
+.link:hover {
+  font-size: 24px; /* Aumenta el tamaño de fuente al pasar el mouse por encima */
+  color: goldenrod;
+}
+
+
